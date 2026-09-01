@@ -1,0 +1,297 @@
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.mainLayout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.settingsCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.iconWrapper {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 0.6rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardHeader h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin: 0;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.formGroup input, .formGroup textarea {
+  padding: 0.75rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.formGroup input:focus, .formGroup textarea:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+.divider {
+  height: 1px;
+  background: #edf2f7;
+  margin: 1rem 0;
+}
+
+.submitBtn {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: #1b5e20;
+}
+
+.submitBtn:disabled {
+  background: #a5d6a7;
+  cursor: not-allowed;
+}
+
+/* Prediction Column Styles */
+.previewSticky {
+  position: sticky;
+  top: 2rem;
+}
+
+.previewTitle {
+  font-size: 1rem;
+  color: #718096;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.identityCard {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.identityCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at top right, rgba(46, 125, 50, 0.05), transparent);
+  border-radius: 0 0 0 100%;
+}
+
+.cardBranding {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.logoCircle {
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #e8f5e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.brandText h5 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #1a202c;
+  font-weight: 700;
+}
+
+.brandText span {
+  font-size: 0.85rem;
+  color: #38a169;
+  font-weight: 500;
+}
+
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.detailRow {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  color: #4a5568;
+}
+
+.detailRow p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.cardFooter {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.chip {
+  background: #f7fafc;
+  color: #718096;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 100px;
+  border: 1px solid #e2e8f0;
+  font-weight: 500;
+}
+
+.previewInfo {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.6rem;
+  color: #718096;
+  background: #f7fafc;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px dashed #cbd5e0;
+}
+
+.previewInfo p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .mainLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .previewSticky {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .pageTitle {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .settingsCard {
+    padding: 1rem;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .submitBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .identityCard {
+    padding: 1rem;
+  }
+
+  .cardBranding {
+    gap: 0.8rem;
+  }
+
+  .logoCircle {
+    width: 48px;
+    height: 48px;
+  }
+}
+
